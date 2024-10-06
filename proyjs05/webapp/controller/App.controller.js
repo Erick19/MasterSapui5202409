@@ -1,11 +1,12 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
+    "sap/ui/core/mvc/Controller",
+     "sap/m/MessageToast"
     ]
-    ,function(Controller){
+    ,function(Controller,MessageToast){
         "use strict";
         return Controller.extend("proyjs05.Controller.App",{
             onHola:function(){
-                alert("Hola EV desde controller");
+                MessageToast.show("Hola EV desde controller MessageToast");
             }
         });        
     });
