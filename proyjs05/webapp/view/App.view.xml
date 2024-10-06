@@ -1,4 +1,10 @@
-<mvc:View   xmlns:m= "sap.m"
-            xmlns:mvc= "sap.ui.core.mvc"> 
-    <m:Text id="id_Text" text ="Hola EV desde view"> </m:Text>
-</mvc:View> 
+<mvc:View   controllerName="proyjs05.controller.App"
+            xmlns:m="sap.m"
+            xmlns:mvc="sap.ui.core.mvc">
+
+
+          <m:Button id="id_btn"
+                    text="Decir Hola"
+                    press="onHola">
+          </m:Button>
+</mvc:View>
