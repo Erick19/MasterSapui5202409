@@ -1,5 +1,13 @@
 sap.ui.define([
-    "sap/m/Text"
-],function(Text){
-    new Text({text:"Bienvenido EV 03 Bas SapUI5 Control"}).placeAt("content");    
-});
+    "sap/ui/core/mvc/XMLView"
+    ]
+    ,function(XMLView){
+        "use strict";
+        XMLView.create({
+            viewName:"proyjs05.view.App"
+        }).then(function(oView){
+            oView.placeAt("content");
+        }
+    )
+    });
+    
