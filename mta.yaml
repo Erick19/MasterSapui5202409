@@ -1,0 +1,30 @@
+_schema-version: "3.2"
+ID: mt_05
+version: 0.0.1
+modules:
+- name: mt-05-approuter
+  type: approuter.nodejs
+  path: mt-05-approuter
+  requires:
+  - name: mt_05_html_repo_runtime
+  parameters:
+    disk-quota: 256M
+    memory: 256M
+- name: mt_05_ui_deployer
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: mt_05_html_repo_host
+    parameters:
+      content-target: true
+resources:
+- name: mt_05_html_repo_runtime
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-plan: app-runtime
+- name: mt_05_html_repo_host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-plan: app-host
