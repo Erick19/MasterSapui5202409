@@ -7,4 +7,11 @@
                     text="Decir Hola"
                     press="onHola">
           </m:Button>
+          <m:Input  id = "id_input"
+                    value= "{/persona/name}"
+                    description="Hola {/persona/name}"
+                    width="60%"
+                    >
+          </m:Input>
+
 </mvc:View>
