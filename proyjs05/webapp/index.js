@@ -1,13 +1,14 @@
+
 sap.ui.define([
-    "sap/ui/core/mvc/XMLView"
+    "sap/ui/core/ComponentContainer"
     ]
-    ,function(XMLView){
-        "use strict";
-        XMLView.create({
-            viewName:"proyjs05.view.App"
-        }).then(function(oView){
-            oView.placeAt("content");
-        }
-    )
+    ,function(ComponentContainer){
+        new ComponentContainer({
+            name: "proyjs05",
+            settings:{
+                id:"proyjs05"
+            },
+            async:true
+        }).placeAt("content");    
     });
-    
+        

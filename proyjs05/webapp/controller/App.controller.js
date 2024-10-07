@@ -9,12 +9,6 @@ sap.ui.define([
         return Controller.extend("proyjs05.Controller.App",{
             onInit:function(){
 
-                //Esto da acceso al Modelo 
-                this.getView().setModel(Models.createPersona());                
-
-                // Esto estable modelo de textos
-                var i18nModel = new ResourceModel({ bundleName: "proyjs05.i18n.i18n"});
-                this.getView().setModel(i18nModel,"mo_i18n");
             },
 
             onHola:function(){
