@@ -4,7 +4,7 @@
 
 
           <m:Button id="id_btn"
-                    text="Decir Hola"
+                    text="{mo_i18n>t01}"
                     press="onHola">
           </m:Button>
           <m:Input  id = "id_input"
