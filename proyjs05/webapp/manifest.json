@@ -89,8 +89,8 @@
         }
       }
     },
-    "rootView": {
-      "viewName": "com.nsproyjs05.proyjs05.view.App",
+    "rootView": {      
+      "viewName": "proyjs05.view.App",      
       "type": "XML",
       "async": true,
       "id": "App"

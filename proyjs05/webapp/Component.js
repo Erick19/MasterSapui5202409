@@ -7,12 +7,15 @@ sap.ui.define([
 
         return UIComponent.extend("proyjs05.Component",{
             metadata:{
+                manifest:"json"
+                /*
                 "rootView":{
                     "viewName"  :"proyjs05.view.App",
                     "type"      :"XML",
                     "async"     : true,
                     "id"        :"app"
                 }
+                */
             },
     
             init:function(){
