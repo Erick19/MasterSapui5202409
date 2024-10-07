@@ -8,7 +8,7 @@
             src                         = "https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
             data-sap-ui-theme           = "sap_fiori_3"
             data-sap-ui-compatVersion   = "edge"
-            data-sap-ui-oninit          = "module:proyjs05/index"
+            data-sap-ui-oninit          = "module:sap/ui/core/ComponentSupport"
             data-sap-ui-async           = "true"
             data-sap-ui-frameOptions    = "trusted"
             data-sap-ui-resourceroots   = '{"proyjs05" : "./"}' 
@@ -16,7 +16,12 @@
     </script>
 
     </head>
-    <body class="sapUIBody" id="content">        
+    <body class="sapUIBody" id="content">      
+        <div    data-sap-ui-component 
+                data-name="proyjs05" 
+                data-id="container"
+                data-set-setting="{id:proyjs05}">
+        </div>  
     </body>
 
 </html>
