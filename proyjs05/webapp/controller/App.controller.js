@@ -1,20 +1,13 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
      "sap/m/MessageToast",
-     "sap/ui/model/json/JSONModel"
+     "proyjs05/model/Models"
     ]
-    ,function(Controller,MessageToast,JSONModel){
+    ,function(Controller,MessageToast,Models){
         "use strict";
         return Controller.extend("proyjs05.Controller.App",{
             onInit:function(){
-                var oData = {
-                    persona:{
-                        name:"Persona01"
-                    }
-                }
-                var oModel = new JSONModel(oData);
-               
-                this.getView().setModel(oModel);
+                this.getView().setModel(Models.createPersona());                
             },
 
             onHola:function(){
