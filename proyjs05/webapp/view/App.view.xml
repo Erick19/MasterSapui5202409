@@ -22,7 +22,7 @@
                                   width="60%"
                                   >
                         </m:Input>
-                        <m:Text id="id_Text" text="Valor" class= "sapUiSmallMarginEnd"></m:Text>
+                        <m:Text id="id_Text" text="Valor" class= "sapUiSmallMarginEnd AplicarNegrita" ></m:Text>
                       </m:content>
                     </m:Panel>
                     <m:Panel id="Id_Panel2" headerText="HT_02">                    
