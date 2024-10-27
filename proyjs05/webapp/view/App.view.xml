@@ -8,11 +8,13 @@
               <m:pages>
                 <m:Page id="id_Page" title="Título1">
                   <m:content>
-                    <m:Panel id="Id_Panel1" headerText="HT_01">
+                    <m:Panel id="Id_Panel1" headerText="HT_01" class="sapUiResponsiveMargin" width="auto">
                       <m:content>
                         <m:Button id="id_btn"
                                   text="{mo_i18n>t01}"
-                                  press="onHola">
+                                  press="onHola"
+                                  class= "sapUiSmallMarginEnd"
+                                  >
                         </m:Button>
                         <m:Input  id = "id_input"
                                   value= "{/persona/name}"
@@ -20,6 +22,7 @@
                                   width="60%"
                                   >
                         </m:Input>
+                        <m:Text id="id_Text" text="Valor" class= "sapUiSmallMarginEnd"></m:Text>
                       </m:content>
                     </m:Panel>
                     <m:Panel id="Id_Panel2" headerText="HT_02">                    
