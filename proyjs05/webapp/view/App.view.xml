@@ -3,37 +3,38 @@
             xmlns:mvc="sap.ui.core.mvc"
             displayBlock="true"
             >
-
-          <m:App id="id_App">
-            <m:pages>
-              <m:Page id="id_Page" title="Título1">
-                <m:content>
-                  <m:Panel id="Id_Panel1" headerText="HT_01">
-                    <m:content>
-                      <m:Button id="id_btn"
-                                text="{mo_i18n>t01}"
-                                press="onHola">
-                      </m:Button>
-                      <m:Input  id = "id_input"
-                                value= "{/persona/name}"
-                                description="Hola {/persona/name}"
-                                width="60%"
-                                >
-                      </m:Input>
-                    </m:content>
-                  </m:Panel>
-                  <m:Panel id="Id_Panel2" headerText="HT_02">                    
-                      <m:Button id="id_btn2"
-                                text="{mo_i18n>t01}"
-                                press="onHola">
-                      </m:Button>
-                      <m:Button id="id_btn3"
-                                text="{mo_i18n>t01}"
-                                press="onHola">
-                      </m:Button>                    
-                  </m:Panel>
-                </m:content>
-              </m:Page>
-            </m:pages>
-          </m:App>
+          <m:Shell id = "id_Shell">
+            <m:App id="id_App">
+              <m:pages>
+                <m:Page id="id_Page" title="Título1">
+                  <m:content>
+                    <m:Panel id="Id_Panel1" headerText="HT_01">
+                      <m:content>
+                        <m:Button id="id_btn"
+                                  text="{mo_i18n>t01}"
+                                  press="onHola">
+                        </m:Button>
+                        <m:Input  id = "id_input"
+                                  value= "{/persona/name}"
+                                  description="Hola {/persona/name}"
+                                  width="60%"
+                                  >
+                        </m:Input>
+                      </m:content>
+                    </m:Panel>
+                    <m:Panel id="Id_Panel2" headerText="HT_02">                    
+                        <m:Button id="id_btn2"
+                                  text="{mo_i18n>t01}"
+                                  press="onHola">
+                        </m:Button>
+                        <m:Button id="id_btn3"
+                                  text="{mo_i18n>t01}"
+                                  press="onHola">
+                        </m:Button>                    
+                    </m:Panel>
+                  </m:content>
+                </m:Page>
+              </m:pages>
+            </m:App>
+          </m:Shell>
 </mvc:View>
