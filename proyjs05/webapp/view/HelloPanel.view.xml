@@ -1,0 +1,25 @@
+<mvc:View   controllerName="proyjs05.controller.HelloPanel"
+            xmlns:m="sap.m"
+            xmlns:mvc="sap.ui.core.mvc"
+            displayBlock="true"
+            >
+          
+            <m:Panel id="Id_Panel1" headerText="HT_01" class="sapUiResponsiveMargin" width="auto">
+                <m:content>
+                <m:Button id="id_btn"
+                            text="{mo_i18n>t01}"
+                            press="onHola"
+                            class= "sapUiSmallMarginEnd"
+                            >
+                </m:Button>
+                <m:Input  id = "id_input"
+                            value= "{/persona/name}"
+                            description="Hola {/persona/name}"
+                            width="60%"
+                            >
+                </m:Input>
+                <m:Text id="id_Text" text="Valor" class= "sapUiSmallMarginEnd AplicarNegrita" ></m:Text>
+                </m:content>
+            </m:Panel>
+          
+</mvc:View>

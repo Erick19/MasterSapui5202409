@@ -8,23 +8,9 @@
               <m:pages>
                 <m:Page id="id_Page" title="Título1">
                   <m:content>
-                    <m:Panel id="Id_Panel1" headerText="HT_01" class="sapUiResponsiveMargin" width="auto">
-                      <m:content>
-                        <m:Button id="id_btn"
-                                  text="{mo_i18n>t01}"
-                                  press="onHola"
-                                  class= "sapUiSmallMarginEnd"
-                                  >
-                        </m:Button>
-                        <m:Input  id = "id_input"
-                                  value= "{/persona/name}"
-                                  description="Hola {/persona/name}"
-                                  width="60%"
-                                  >
-                        </m:Input>
-                        <m:Text id="id_Text" text="Valor" class= "sapUiSmallMarginEnd AplicarNegrita" ></m:Text>
-                      </m:content>
-                    </m:Panel>
+                    
+                    <mvc:XMLView id="v2" viewName="proyjs05.view.HelloPanel"></mvc:XMLView>
+
                     <m:Panel id="Id_Panel2" headerText="HT_02">                    
                         <m:Button id="id_btn2"
                                   text="{mo_i18n>t01}"
