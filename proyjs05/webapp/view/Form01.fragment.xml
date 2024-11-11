@@ -1,0 +1,13 @@
+<core:FragmentDefinition   xmlns:m="sap.m"
+                           xmlns:core="sap.ui.core"
+                           xmlns:f="sap.ui.layout.form"
+                           >
+          
+            <m:Panel id="if_fp" headerText="Panel01">
+                <f:SimpleForm id="id_sf">
+                    <m:Label id = "id_la" text="Persona"></m:Label>
+                    <m:Input id ="id_inp" ></m:Input>
+                </f:SimpleForm>
+            </m:Panel>
+          
+</core:FragmentDefinition>
