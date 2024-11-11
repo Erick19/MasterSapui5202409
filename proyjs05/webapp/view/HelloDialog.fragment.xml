@@ -3,6 +3,9 @@
                             >
 
     <m:Dialog id="Id_Dialog" title ="Títlo de Dialogo">
+        <m:content>
+            <core:Icon id="id_icon" src="sap-icon://collections-insight" size="2rem"/>
+        </m:content>
         <m:beginButton>
             <m:Button id="id_diace" text= "Cerrar" press="onDialogClose" ></m:Button>
         </m:beginButton>
