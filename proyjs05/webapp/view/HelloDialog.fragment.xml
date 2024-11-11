@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns:m = "sap.m"
+                         xmlns:core="sap.ui.core"
+                            >
+
+    <m:Dialog id="Id_Dialog" title ="Títlo de Dialogo">
+    </m:Dialog>
+
+</core:FragmentDefinition>

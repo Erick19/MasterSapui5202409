@@ -14,7 +14,7 @@
                     <m:Panel id="Id_Panel2" headerText="HT_02">                    
                         <m:Button id="id_btn2"
                                   text="{mo_i18n>t01}"
-                                  press="onHola">
+                                  press="onHelloDialog">
                         </m:Button>
                         <m:Button id="id_btn3"
                                   text="{mo_i18n>t01}"
