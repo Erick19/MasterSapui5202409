@@ -21,7 +21,8 @@ sap.ui.define([
                 if(!this.byId("Id_Dialog")){
                     Fragment.load({
                         id:   oView.getId(),
-                        name: "proyjs05.view.HelloDialog"
+                        name: "proyjs05.view.HelloDialog",
+                        controller:this
                     }).then(function(oDialog){
                         oView.addDependent();
                         oDialog.open();
@@ -29,6 +30,9 @@ sap.ui.define([
                 }else{
                     this.byId("Id_Dialog").open();
                 }
+            },
+            onDialogClose:function(){
+                this.byId("Id_Dialog").close();
             }
         });        
     });
