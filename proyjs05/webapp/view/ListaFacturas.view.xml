@@ -1,0 +1,13 @@
+<mvc:View   xmlns:m     =   "sap.m"
+            xmlns:mvc   =   "sap.ui.core.mvc">
+    
+    <m:List headerText  =   "Lista de Facturas" 
+            class       =   "sapUIResponsiveMargin" 
+            width       =   "auto"
+            items       =   "{mod_Factura>/Facturas}">
+            <m:items>
+                <m:ObjectListItem   title   =   "{mod_Factura>Cantidad} x {mod_Factura>NomFactura}"/>                
+            </m:items>
+    </m:List>
+
+</mvc:View>

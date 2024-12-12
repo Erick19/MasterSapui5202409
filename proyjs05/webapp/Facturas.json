@@ -1,0 +1,25 @@
+{
+    "Facturas":[
+        {
+            "NomFactura":"Factura01",
+            "Cantidad"  : 21,
+            "NomVenta"  : "Vend01",
+            "FecVenta"  : "2015-04-01T00:00:00",
+            "Status"    :"A"
+        },
+        {
+            "NomFactura":"Factura02",
+            "Cantidad"  : 23,
+            "NomVenta"  : "Vend02",
+            "FecVenta"  : "2021-09-01T00:00:00",
+            "Status"    :"A"
+        },
+        {
+            "NomFactura":"Factura03",
+            "Cantidad"  : 18,
+            "NomVenta"  : "Vend01",
+            "FecVenta"  : "2015-04-19T00:00:00",
+            "Status"    :"B"
+        }
+    ]
+}

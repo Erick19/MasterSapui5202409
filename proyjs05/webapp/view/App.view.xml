@@ -23,6 +23,7 @@
                                   press="onHola">
                         </m:Button>                    
                     </m:Panel>
+                    <mvc:XMLView viewName="proyjs05.view.ListaFacturas"/>
                   </m:content>
                 </m:Page>
               </m:pages>

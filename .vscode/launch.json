@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "proyjs05-config1",
-      "cwd": "${workspaceFolder}/proyjs05",
+      "cwd": "${workspaceFolder}",
       "runtimeArgs": [
         "fiori",
         "run"
@@ -25,6 +25,31 @@
         "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/mt_05/proyjs05\"}",
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
       }
+    },
+    {
+        "name": "StartEV",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/proyjs05",
+        "runtimeExecutable": "npx",
+        "windows": {
+            "runtimeExecutable": "npx.cmd"
+        },
+        "runtimeArgs": [
+            "fiori",
+            "run"
+        ],
+        "args": [
+            "--open",
+            "index.html"
+        ],
+        "console": "internalConsole",
+        "internalConsoleOptions": "openOnSessionStart",
+        "outputCapture": "std",
+        "env": {
+            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/MasterSapui5202409/proyjs05\"}",
+            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
+        }
     }
   ]
 }
